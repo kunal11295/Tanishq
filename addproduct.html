@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+</head>
+<body>
+    <h1>Jewellery</h1>
+    <form onsubmit="addproduct(event)">
+        <label>Product Name</label><br>
+        <input type="text" id="pname"><br>
+        <label>Product Price</label><br>
+        <input type="text" id="pprice"><br>
+        <label>Product Image url </label><br>
+        <input type="text" id="pimage"><br>
+        <input type="submit" ><br>  
+    </form>
+    <script>
+        function addproduct(event)
+        {
+            event.preventDefault();
+             //alert("product adding")
+             var proName=document.getElementById("pname").value;
+             var proPrice=document.getElementById("pprice").value;
+             var proImage=document.getElementById("pimage").value;
+             var product={proName,proPrice,proImage} ;
+
+             var Ls=JSON.parse(localStorage.getItem("tanshiqProductList")) || [];
+             Ls.push(product);
+             localStorage.setItem("tanshiqProductList",JSON.stringify(Ls));
+             alert("Product Successfully")
+        }
+    </script>
+
+</body>
+</html>

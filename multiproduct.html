@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiproducts</title>
+    <script src="https://kit.fontawesome.com/032f5a99f2.js" crossorigin="anonymous"></script>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .screen
+        {
+            width: 100%;
+            border: 1px solid black;
+        }
+        .navbar
+        {
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 70px;
+            display: flex;  
+            background-color: #f2e9e9;
+
+        }
+        .Left
+        {
+            width: 65%;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+        }
+        .right
+        {
+            width: 35%;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+        
+        }
+        .right>div
+        {
+            width: 15%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .right>div>h4
+        {
+
+            color: #832729;
+        }
+        .Left>div:nth-child(1)
+        {
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            
+        }
+        .Left>div:nth-child(1)>img
+        {
+            
+            margin-left: 150px;
+            padding-top: 8px;
+        }
+        .Left>div:nth-child(2)
+        {
+            /* border: 1px solid black;  */
+            width: 65%; 
+            display: flex;
+            height: 55px;
+            margin-top: 5px;
+            margin-left: 10px;
+        background-color: white;
+        }
+
+        .Left>div:nth-child(2)>div:nth-child(1)
+        {
+            width: 80%;
+            height: 40px;
+           
+            margin-left: 5px; 
+
+        }
+        .Left>div:nth-child(2)>div:nth-child(1)>input
+        {
+            width: 100%;
+            height: 45px;
+            margin-top: 5px;
+            border:none;
+        }
+        .Left>div:nth-child(2)>div:nth-child(2)>img
+        {
+            margin-top: 10px;
+              
+        }
+        .Left>div:nth-child(2)>div:nth-child(3)>img
+        {
+            margin-top: 18px;
+            
+              
+        } .Left>div:nth-child(2)>div:nth-child(4)>img
+        {
+            margin-top: 18px;
+            /* border: 1px solid black; */
+            margin-left: 10px;
+              
+        }
+        .cat
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            
+        }
+        .cat>div:nth-child(1)
+        {   
+        
+            list-style: none;
+            display: flex;
+            padding-top: 10px;
+            padding-left: 15px;
+            height: 50px;
+            font-family: Nunito Sans,sans-serif!important;
+            color:  #000;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        .cat>div:nth-child(1)>div
+        {
+            width: 20%;
+            /* border: 1px solid violet; */
+            text-align: center;
+            
+        }
+        .title
+        {
+            width: 90%;
+            
+            height: 50px;   
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .title>div
+        {
+            width: 20%;
+            text-align: center;
+            /* border: 1px solid black;.. */
+            padding-top: 10px;
+            
+        }
+        .title .bts
+        {
+            border: none;
+            color:#832729;  
+            background-color: white;   
+            font-size: 15px;   
+        }
+        .store
+        {
+            width: 65%;
+            /* border: 1px solid black; */
+            height: 60px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            
+        }
+        .store>div
+        {
+            width: 35%;
+            /* border: 1px solid black; */
+              display: flex;
+        }
+        .store>div>h3
+        {
+            width: 80%;
+            height: 40px;
+            text-align: center;
+            margin-bottom: 100px;
+            /* border: 1px solid black; */
+            font-size: 17px;
+            
+        }
+    
+        .store>div>h3
+        {
+            color: #832729;
+        }
+        .store>div:nth-child(1)>h3
+        {
+            font-size: 17px;
+            justify-content: left;
+            text-align: left;
+        }
+        .store>div:nth-child(2)>h3
+        {
+            font-size: 17px;
+            justify-content: left;
+            text-align: left;
+        }
+        .store>div:nth-child(3)>h3
+        {
+            font-size: 17px;
+            justify-content: left;
+            text-align: left;
+        }
+
+        .store>div:nth-child(1)>div:nth-child(1)
+        {
+            width: 20%;
+            /* border: 1px solid black; */
+        }
+        .store>div:nth-child(2)>div:nth-child(1)
+        {
+            width: 20%;
+            /* border: 1px solid black; */
+        }.store>div:nth-child(3)>div:nth-child(1)
+        {
+            width: 20%;
+            /* border: 1px solid black; */
+        }
+
+        .store>div:nth-child(1)>div:nth-child(1)>img
+        {
+         width: 50%;
+         margin-left: 20px; 
+         /* border: 1px solid black;    */
+        }
+        .store>div:nth-child(2)>div:nth-child(1)>img
+        {
+         width: 50%;
+         margin-left: 20px;
+         /* border: 1px solid black;     */
+        }
+        .store>div:nth-child(3)>div:nth-child(1)>img
+        {
+         width: 50%;
+         margin-left: 20px;   
+          /* border: 1px solid black;  */
+        }
+
+        .home
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .home>h3
+        {
+            font-size: 22px;
+            color:#832729;
+            margin-left: 5px;
+
+            
+        }
+        .home>h4
+        {
+            font-size: 22px;margin-right: 5px;
+        }
+        .design
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .design>p
+        {
+            font-size: 25px;
+            margin-top: 5px;
+        }
+        .design>h1
+        {
+            margin-right: 5px;
+        }
+        .compare
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: flex;
+            margin-bottom: 20px;
+
+            
+        }
+        .compare>div:nth-child(1)>img
+        {
+            width: 25%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .compare .box
+        {
+            height: 30px;
+            border: none;
+            margin-left: 10px;
+            font-size: 15px;
+            background-color: white;
+            margin-top: 8px;
+        }
+        .compare>div:nth-child(1)
+        {
+            width: 30%;
+            border:1px solid brown;
+             padding-top: 6px;
+             margin-left: 10px;
+             display: flex;
+        }
+        .compare>div:nth-child(2)
+        {
+            width: 30%;
+          margin-left: 850px;
+          border: 1px solid black;
+          height: 50px;
+          border: 1px solid brown;
+        }
+        .gold
+        {
+            width: 90%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        .gold>div
+        {
+            width: 22%;
+            height: 400px;
+            border: 1px solid gray;
+            margin-top: 20px;
+        }
+        .best
+        {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
+        }
+        .best>h2
+        {
+            margin-bottom: 10px;
+            font-family: Nunito Sans,sans-serif!important;
+        }
+        .best>p
+        {
+            font-family: Nunito Sans,sans-serif!important;
+            font-size: 20px;
+            margin-bottom: 10px;  
+        }
+        .last
+{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2e9e9;
+}
+.last>div
+{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+}
+.last>div:nth-child(1)>h2
+{
+   margin-left:40px;
+    margin-top: 20px;
+    color: #832729;
+    font-family: Nunito Sans,sans-serif!important;
+}
+.last>div:nth-child(1)>div>ul
+{
+    list-style: none;
+    /* text-align: center; */
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.last>div:nth-child(1)>div>ul>li
+{
+    margin-bottom: 35px;
+}
+.last>div:nth-child(2)>h2
+{
+   margin-left:40px;
+    margin-top: 20px;
+    color: #832729;
+    font-family: Nunito Sans,sans-serif!important;
+}
+.last>div:nth-child(2)>div>ul
+{
+    list-style: none;
+    /* text-align: center; */
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.last>div:nth-child(2)>div>ul>li
+{
+    margin-bottom: 35px;
+}
+.last>div:nth-child(3)>h2
+
+    {
+   margin-left:40px;
+    margin-top: 20px;
+    color: #832729;
+    font-family: Nunito Sans,sans-serif!important;
+    margin-bottom: 30px;
+}
+
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>p
+{
+    margin-left: 10px;
+    font-size: 22px;
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;   
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>p
+{
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)>p
+{
+    margin-left: 10px;
+    font-size: 22px;
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>img 
+{
+    width: 20px;
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>img 
+{
+    width: 20px;
+}
+.last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)>img 
+{
+    width: 20px;
+}
+.last>div:nth-child(4)>h3
+{
+  
+    margin-top: 20px;
+   
+    font-family: Nunito Sans,sans-serif!important;
+    margin-bottom: 30px;
+    
+}
+.last>div:nth-child(4)>div:nth-child(2)
+{
+    display: flex;
+    justify-content: space-around;
+}
+.last>div:nth-child(4)>div:nth-child(2)>img
+{
+    width:40%;
+    justify-content: space-between;
+}
+.last>div:nth-child(4)>div:nth-child(3)
+{
+    display: flex;
+    margin-top: 20px;
+}
+.last>div:nth-child(4)>div:nth-child(3)>h3
+{
+    margin-left: 10px;
+    font-family: Nunito Sans,sans-serif!important;
+}
+
+.last>div:nth-child(4)>div:nth-child(3)>div>img{
+    width:20px;
+    margin-left: 20px;
+   
+}
+.last>div:nth-child(4)>div:nth-child(3)>div:nth-child(3)>img
+{
+    margin-top: 5px;
+}
+.last>div:nth-child(4)>div:nth-child(3)>div:nth-child(4)>img
+{
+    margin-top: 5px;
+}.end
+{
+    width: 100%;
+    /* border: 1px solid black; */
+    
+    display: flex;
+    background-color: #f2e9e9;
+    
+}
+.end>div:nth-child(1)>div
+{
+    margin-left:20px;
+    
+}
+.end>div:nth-child(1)>div>img
+{
+   width: 70%;
+   height: 30px;
+   margin-top: 20px;
+}
+.end>div:nth-child(1)
+{
+    display: flex;
+}
+.end>div:nth-child(2)
+{
+    margin-left: 100px;
+}
+.end>div:nth-child(2)>h4
+{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Nunito Sans,sans-serif!important;
+   color: #832729;
+}
+.end>div:nth-child(2)>div>p
+{
+ color:#832729;
+    font-family: Nunito Sans,sans-serif!important;
+}
+.first
+{
+    width:100%;
+
+}
+.first>div:nth-child(1)>img
+{
+    width: 100%;
+    height: 250px;
+    border-bottom:  1px solid gray;
+     margin-bottom: 10px;
+}
+.first>div:nth-child(2)
+{
+    margin-left: 10px;
+    
+}
+.first>div:nth-child(2)>h3
+{    margin-bottom: 10px;
+    font-size: 15px;
+}
+.first>div:nth-child(2)>p
+{
+    margin-bottom: 10px;
+}
+.first>div:nth-child(3)
+{
+    width: 98%;
+    margin: auto;
+    height: 32px;
+    border: 1px solid brown;
+    text-align: center;
+}
+.first>div:nth-child(3)>button
+{
+    width: 50%;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+.first>div:nth-child(3)>div:nth-child(3)>button
+{
+    margin-top: 50px;
+}
+
+.second
+{
+    width:100%;
+
+}
+.second>div:nth-child(1)>img
+{
+    width: 100%;
+    height: 250px;
+    border-bottom:  1px solid gray;
+     margin-bottom: 10px;
+}
+.second>div:nth-child(2)
+{
+    margin-left: 10px;
+    
+}
+.second>div:nth-child(2)>h3
+{    margin-bottom: 10px;
+    font-size: 15px;
+}
+.second>div:nth-child(2)>p
+{
+    margin-bottom: 10px;
+}
+.second>div:nth-child(3)
+{
+    width: 98%;
+    margin: auto;
+    height: 32px;
+    border: 1px solid brown;
+    text-align: center;
+    margin-top: 25px;
+}
+.second>div:nth-child(3)>button
+{
+    width: 50%;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+.second>div:nth-child(3)>div:nth-child(3)>button
+{
+    margin-top: 50px;
+}
+#jewellery
+{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+ flex-wrap: wrap;
+}
+#singlepro
+{
+    width: 20%;
+    height: 250px;
+    margin-left: 20px;
+    border: 1px solid black;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#singlepro>img
+{
+    width: 100%;
+    height: 80%;
+}
+</style>
+</head>
+<body>
+    
+    <div class="screen">
+        <class class="navbar">
+            <div class="Left">
+                <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+" width="80px" alt="image" style="opacity: 1;">
+                </div>
+            <div>
+                <div>
+                        <input type="search" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…">
+                </div>
+                <div>
+                   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNvbXBvbmVudF8yMTdfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDI3IDI3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNyAyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjEuMnB4O30KCS5zdDF7ZmlsbDpub25lO30KCS5zdDJ7ZmlsbDojODMyNzI5O3N0cm9rZS13aWR0aDoxLjJweDt9Cgkuc3Qze29wYWNpdHk6MC44O30KCS5zdDR7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDV7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cgkuc3Q2e2ZpbGw6bm9uZTtzdHJva2U6IzgzMjcyOTtzdHJva2Utd2lkdGg6MTt9Cjwvc3R5bGU+CjxnPgoJPGNpcmNsZSBpZD0iRWxsaXBzZV8xMiIgY2xhc3M9InN0MCIgY3g9IjEzLjMiIGN5PSIxMy41IiByPSIxMiIvPgoJPHBhdGggaWQ9IlBhdGhfMjUzIiBjbGFzcz0ic3QxIiBkPSJNMCwwaDI3djI3SDBWMHoiLz4KCTxnIGlkPSJQYXRoXzQzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy43NyA0LjAxMSkiPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LjUsMEMxNC44LDAsMTksNC4zLDE5LDkuNWMwLDUuMi00LjMsOS41LTkuNSw5LjVDNC4yLDE5LDAsMTQuNywwLDkuNUMwLDQuMiw0LjMsMCw5LjUsMHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNOS41LDAuNWMtNSwwLTksNC05LDlzNCw5LDksOXM5LTQsOS05UzE0LjUsMC41LDkuNSwwLjUgTTkuNSwwQzE0LjgsMCwxOSw0LjIsMTksOS41UzE0LjgsMTksOS41LDE5CgkJCVMwLDE0LjcsMCw5LjVTNC4zLDAsOS41LDB6Ii8+Cgk8L2c+Cgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS4yNDIgNS40NSkiPgoJCTxnIGlkPSJjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJPGcgaWQ9Ikdyb3VwXzE0MzQ2IiBjbGFzcz0ic3QzIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDAiIGNsYXNzPSJzdDEiIGQ9Ik0wLDB2MTZoMTZWMEgweiBNMTUsMTVIMVYxaDE0TDE1LDE1eiIvPgoJCQk8L2c+CgkJPC9nPgoJCTxnIGlkPSJiLTIiPgoJCQk8ZyBpZD0iYy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJCTxnIGlkPSJHcm91cF8xNDM0NyIgY2xhc3M9InN0MyI+CgkJCQkJPHBhdGggaWQ9IlBhdGhfMTQ0NSIgY2xhc3M9InN0MSIgZD0iTTAsMHYxNmgxNlYwSDB6IE0xNSwxNUgxVjFoMTRMMTUsMTV6Ii8+CgkJCQk8L2c+CgkJCTwvZz4KCQkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODk0IDIuNjcpIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDYiIGNsYXNzPSJzdDQiIGQ9Ik03LjIsOC4yQzUuNyw4LjIsNC41LDcsNC41LDUuNXMxLjItMi43LDIuNy0yLjdTOS44LDQsOS44LDUuNWMwLDAsMCwwLDAsMAoJCQkJCUM5LjgsNyw4LjYsOC4yLDcuMiw4LjJ6Ii8+CgkJCQk8cGF0aCBpZD0iUGF0aF8xNDQ3IiBjbGFzcz0ic3Q1IiBkPSJNMTMsMnY3LjRjMCwwLjEtMC4xLDAuMi0wLjIsMC4yYzAsMCwwLDAsMCwwSDEuNmMtMC4xLDAtMC4yLTAuMS0wLjMtMC4yYzAsMCwwLDAsMCwwVjIKCQkJCQljMC0wLjEsMC4xLTAuMiwwLjMtMC4yaDEuOGwxLjEtMS42SDEwbDEsMS42aDEuOEMxMi45LDEuOCwxMywxLjksMTMsMnoiLz4KCQkJCTxnIGlkPSJSZWN0YW5nbGVfOTk0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuOTkgMy4wMDIpIj4KCQkJCQk8cmVjdCB4PSIwIiB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CgkJCQkJPHBvbHlnb24gY2xhc3M9InN0NiIgcG9pbnRzPSIwLjUsMC41IDAuNSwwLjUgMC41LDAuNSAJCQkJCSIvPgoJCQkJPC9nPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" height="40px" alt="image" style="opacity: 1;">
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojNjMxNjE3O3N0cm9rZS13aWR0aDoxLjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxnIGlkPSJNaWNyb3Bob25lX0hvdmVyIj4NCgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+DQoJCTxnIGlkPSJjIj4NCgkJCTxwYXRoIGlkPSJQYXRoXzE0MDIiIGNsYXNzPSJzdDAiIGQ9Ik0wLDB2MjhoMjhWMEwwLDB6IE0yNi4yLDI2LjJIMS44VjEuOGgyNC41VjI2LjJ6Ii8+DQoJCTwvZz4NCgkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuOTkyIDIuMzc0KSI+DQoJCQk8ZyBpZD0iR3JvdXBfMTQzMTIiPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDMiIGNsYXNzPSJzdDEiIGQ9Ik0xMS41LDkuNVYyLjlDMTEuNiwwLjMsOS42LTEuOSw3LTJDNC40LTEuOSwyLjQsMC4zLDIuNSwyLjl2Ni42Yy0wLjEsMi42LDEuOSw0LjgsNC41LDQuOQ0KCQkJCQlDOS42LDE0LjMsMTEuNiwxMi4xLDExLjUsOS41eiIvPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDQiIGNsYXNzPSJzdDEiIGQ9Ik0wLDcuNHYzLjljMCw0LjQsMy4xLDcuOSw3LDcuOXM3LTMuNSw3LTcuOVY3LjQiLz4NCgkJCQk8bGluZSBpZD0iTGluZV8xMTUiIGNsYXNzPSJzdDEiIHgxPSI3IiB5MT0iMTkuMSIgeDI9IjciIHkyPSIyMy45Ii8+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" height="25px" alt="image"style="opacity: 1;">
+                </div>       
+                <div>       
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik00LjA4LDExLjA3YzAtMy44NiwzLjEzLTYuOTksNi45OS02Ljk5czYuOTksMy4xMyw2Ljk5LDYuOTktMy4xMyw2Ljk5LTYuOTksNi45OWMtMy44NiwwLTYuOTktMy4xMy02Ljk5LTYuOTloMFptMTkuNDIsMTEuMzNsLTUuODctNS44N2MyLjkzLTMuNTIsMi41Ny04LjcxLS44MS0xMS44cy04LjU5LTIuOTctMTEuODIsLjI3Yy0zLjI0LDMuMjMtMy4zNSw4LjQ0LS4yNywxMS44MnM4LjI4LDMuNzMsMTEuOCwuODFsNS44Nyw1Ljg3LDEuMS0xLjFaIi8+PC9zdmc+" height="25px" alt="image" class="default-img" style="opacity: 1;">
+                </div>
+            </div>     
+                </div>
+        
+                <div class="right">
+                    <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOCAyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjggMjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDE0NzkxMzg0Nzg0NTA1MDEwMjA1MDAwMDAwOTgxNjUwODMxODQwMjc0MjcxOV8pO30NCgkuc3Qxe29wYWNpdHk6MC40Njt9DQoJLnN0MntmaWxsOm5vbmU7fQ0KCS5zdDN7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS1saW5lam9pbjpyb3VuZDt9DQo8L3N0eWxlPg0KPGc+DQoJPGRlZnM+DQoJCTxyZWN0IGlkPSJTVkdJRF8xXyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4Ii8+DQoJPC9kZWZzPg0KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAwMjY4NDE4MTM5MjEwNjUyNzkyNzAwMDAwMTIxNjI5NzI0MzkxMDQ1MDMxNzFfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiLz4NCgk8L2NsaXBQYXRoPg0KCTxnIGlkPSJTdG9yZV9JY29uX0RlZmF1bHRfU3RhdGVfMSIgc3R5bGU9ImNsaXAtcGF0aDp1cmwoI1NWR0lEXzAwMDAwMDI2ODQxODEzOTIxMDY1Mjc5MjcwMDAwMDEyMTYyOTcyNDM5MTA0NTAzMTcxXyk7Ij4NCgkJPGcgaWQ9ImIiPg0KCQkJPGcgaWQ9ImMiPg0KCQkJCTxnIGlkPSJHcm91cF8xNDIwOSIgY2xhc3M9InN0MSI+DQoJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNjkiIGNsYXNzPSJzdDIiIGQ9Ik0wLDB2MjhoMjhWMEgweiBNMjYuMiwyNi4ySDEuOFYxLjhoMjQuNVYyNi4yeiIvPg0KCQkJCTwvZz4NCgkJCTwvZz4NCgkJCTxnIGlkPSJkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjUwNCAzLjUwNCkiPg0KCQkJCTxnIGlkPSJlIj4NCgkJCQkJPGcgaWQ9Ikdyb3VwXzE0MjExIj4NCgkJCQkJCTxyZWN0IGlkPSJSZWN0YW5nbGVfOTkyNCIgeD0iOC43IiB5PSI4LjciIGNsYXNzPSJzdDMiIHdpZHRoPSIxMS4xIiBoZWlnaHQ9IjExLjkiLz4NCgkJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNzAiIGNsYXNzPSJzdDMiIGQ9Ik0yMSw0LjN2NC4zSDBWNC4zTDMuNSwwaDE0TDIxLDQuM3oiLz4NCgkJCQkJCTxsaW5lIGlkPSJMaW5lXzgzIiBjbGFzcz0ic3QzIiB4MT0iNC45IiB5MT0iOC40IiB4Mj0iNC45IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NCIgY2xhc3M9InN0MyIgeDE9IjEwLjUiIHkxPSI4LjQiIHgyPSIxMC41IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NSIgY2xhc3M9InN0MyIgeDE9IjE2LjEiIHkxPSI4LjQiIHgyPSIxNi4xIiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NiIgY2xhc3M9InN0MyIgeDE9IjEuMiIgeTE9IjguNCIgeDI9IjEuMiIgeTI9IjIxIi8+DQoJCQkJCTwvZz4NCgkJCQk8L2c+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                    <h4>Store</h4>
+                </div>
+                    <div id="Switch">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO3N0cm9rZS13aWR0aDoxLjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMywxNS43NWMtMy42NywwLTExLDEuODQtMTEsNS41djIuNzVIMjR2LTIuNzVjMC0zLjY2LTcuMzMtNS41LTExLTUuNVptMC0xMy43NWMtMy4wNCwwLTUuNSwyLjQ2LTUuNSw1LjVzMi40Niw1LjUsNS41LDUuNSw1LjUtMi40Niw1LjUtNS41LTIuNDYtNS41LTUuNS01LjVabTAsMTYuNWMzLjcxLDAsNy45NywxLjc3LDguMjUsMi43NUg0Ljc1Yy4zMi0uOTksNC41NS0yLjc1LDguMjUtMi43NW0wLTEzLjc1YzEuNTEsMCwyLjc1LDEuMjQsMi43NSwyLjc1cy0xLjI0LDIuNzUtMi43NSwyLjc1LTIuNzUtMS4yNC0yLjc1LTIuNzUsMS4yNC0yLjc1LDIuNzUtMi43NSIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMTMsMTUuNzVjLTMuNjcsMC0xMSwxLjg0LTExLDUuNXYyLjc1SDI0di0yLjc1YzAtMy42Ni03LjMzLTUuNS0xMS01LjVabTAtMTMuNzVjLTMuMDQsMC01LjUsMi40Ni01LjUsNS41czIuNDYsNS41LDUuNSw1LjUsNS41LTIuNDYsNS41LTUuNS0yLjQ2LTUuNS01LjUtNS41Wm0wLDE2LjVjMy43MSwwLDcuOTcsMS43Nyw4LjI1LDIuNzVINC43NWMuMzItLjk5LDQuNTUtMi43NSw4LjI1LTIuNzVtMC0xMy43NWMxLjUxLDAsMi43NSwxLjI0LDIuNzUsMi43NXMtMS4yNCwyLjc1LTIuNzUsMi43NS0yLjc1LTEuMjQtMi43NS0yLjc1LDEuMjQtMi43NSwyLjc1LTIuNzUiLz48L3N2Zz4=" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>Account</h4>
+                    </div>
+                    <div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>WishList</h4>
+                    </div>
+                    <div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>Cart</h4>
+                    </div>
+                    <div id="logout">
+                        <button>Logout</button>
+                    </div>
+                </div>
+                </class>
+                <div class="cat">
+                    <div>
+                            <div>All Jewellery</div>
+                            <div>Gold</div>
+                            <div>Diamond</div>
+                            <div>Earning</div>
+                            <div>Rings</div>
+                            <div>Mia</div>
+                            <div>collection</div>
+                            <div>rivaah</div>
+                            <div>golden harvest</div>
+                            <div>coporate gifting</div>
+                            <div>more</div>
+                    </div>
+                </div>
+                <hr style="margin-top: 10px; opacity: 0.3;">
+                <div class="title">
+                    <div>
+                        <button class="bts">PRICE<svg width="46" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                          </svg></button>
+                    </div>
+                    <div>
+                        <button class="bts">COIN GRAMMEAGE<svg width="46" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                          </svg></button>
+                    </div>
+                    <div>
+                        <button class="bts">PURITY<svg width="46" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                          </svg></button>
+                    </div>
+                    <div>
+                        <button class="bts">OCCASION<svg width="46" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                          </svg></button>
+                    </div>
+                    <div>
+                        <button class="bts">DIAMOND CLARITY<svg width="46" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                          </svg></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="store">
+                    <div>
+                        <div>
+                        <img src="2.svg">
+                        </div>
+                        <h3>STORE LOCATOR</h3>
+                    </div>
+                    <div>
+                        <div>
+                        <img src="1.svg">
+                        </div>
+                        <h3>BOOK AN APPOINTMENT</h3>
+                    </div>
+                    <div>
+                        <div>
+                        <img src="3.svg">
+                        </div>
+                        <h3>LIVE VIDEO CALL</h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="home">
+                    <h4>Home<h3>
+                    <div>|</div>
+                    <h3>Gold coins</h3>
+                </div>
+                <div class="design">
+                    <h1>Gold-Coins</h1>
+                    <p>| 70 DESIGNS</p>
+                </div>
+                <div class="compare">
+                    <div>
+                        <img src="download.svg">
+                        <button class="box">COMPARE</button>
+                    </div>
+                    <div>
+                        <button class="box">SORT BY:BEST SELLERS</button>
+                    </div>
+                </div>
+                <div id="jewellery"></div>
+             <!-- <div class="gold"> -->
+                    <!-- <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Goddess Lakshmiji's Feet 10 gram Gold Coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 66542</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>  -->
+                    <!-- <div class="second">
+                            <div>
+                                <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600735ZAAAAP00_1.jpg?impolicy=pqmed&imwidth=640">
+                            </div>
+                            <div>
+                                <h3>Ashtalakshmi 22 Karat Gold Coin</h3>
+                                <h3><i class="fa-solid fa-indian-rupee-sign"></i> 26617</h3>
+                                <p>unisex | Gold Coin</p>
+                            </div>
+                            <div>
+                                <button>Explore Now</button>
+                            </div>
+                        </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51C2ECXAJAAA00.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Goddess Lakshmi with Lotus Motif 22 Karat Gold Coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 49068</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51C2ECXAAAAA00.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Goddess Lakshmi with Lotus Motif 22 Karat Gold Coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 50745</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51C2ECXAFAAA00.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Ganesh Motif 22 Karat Gold Coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 55330</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51C2ECXABAAA00.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Sitting Ganesh Motif 22 Karat Gold Coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>58584</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51C2DTXAMAAA00.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>Shree Yantra 22 karat gold coin</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 52561</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600113ZCARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>8 gram 24 Karat Gold Coin with Ganesha-Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>57274</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZDARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>8 gram 24 Karat Gold Coin with Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 57274</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZAARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>10 gram 24 Karat Gold Coin with Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>71592</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600107ZAARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>10 gram 24 Karat Gold Coin with Ganesha Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 71592</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600113ZAARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>10 gram 24 Karat Gold Coin with Ganesha-Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 71592</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZECAAP00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>10 gram 22 Karat Gold Coin with the Blessings of Ma Lakshmi</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>65627</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZBARAS00_1.jpg?impolicy=pqmed&imwidth=6400">
+                        </div>
+                        <div>
+                            <h3>5 gram 24 Karat Gold Coin with Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 35963</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600113ZBARAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>5 gram 24 Karat Gold Coin with Ganesha-Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 35963</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZGBRAS00_1.jpg?impolicy=pqmed&imwidth=640">
+                        </div>
+                        <div>
+                            <h3>1 gram 24 Karat Gold Coin with Lakshmi Motif</h3>
+                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>7193</h3>
+                            <p>unisex | Gold Coin</p>
+                        </div>
+                        <div>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    
+                </div> --> -->
+                <div class="best">
+                    <h2>The best investment – Gold investment</h2>
+                    <p>Indians and gold have an everlasting bond that becomes extravagant with each festival. Other than gold jewellery, people also buy gold in the form of bars and coins</p>
+                </div>
+                <div class="best">
+                    <h2>Why invest in gold coins?</h2>
+                    <p>Gold is believed to be a tangible asset and has always had a good market value for centuries. Investing in a gold coin lets you stay assured of good returns. Gold is relatively stable as compared to other investment options.<p></p>
+                    <p> Gold coins are among the most favoured choices of investments, especially in India. People have started to consider investing in a gold coin as one of the best ways to save money. Apart from being a low-risk investment option, it also offers better security, making it an easy way of investment. You can buy gold coins from 1 gram to 25 grams or 100 grams at the lowest gold coin rates from Tanishq. You no longer have to go to the shop to purchase gold coins Tanishq delivers them to your doorstep with express and contactless delivery.</p>
+                </div>
+                <div class="best">
+                    <h2>One gold coin can save your against inflation</h2>
+                    <p>Gold is believed to have a verge against inflation. Reports state that gold has outperformed the inflation rate and reduced the risk by a huge margin. Many people even look at gold as an alternative to currency. Gold is a real physical asset that tends to hold its value in the market, which, in turn, proves that buying a gold coin is a good investment option.</p>
+                </div>
+                <div class="best">
+                    <h2>Gold Coins > Gold Jewellery</h2>
+                    <p>Investing in a gold coin is relatively easier than gold jewellery. Think about it!</p>
+                    <p>You can buy it in its purest form possible in its minimum weight with little to no making charges contrary to other gold jewellery. Tanishq offers 100 % authentic hallmark gold coins and bars ranging from 1 gram, 25 grams, and 100 grams to 500 grams.</p>
+                    <p>Selling a gold coin is also easier than selling gold jewellery. You can always check the latest gold coin rate and sell it without hassle. And if you don’t wish to sell, you can pledge the same for a loan from any trusted bank.</p>
+                </div>
+                <div class="best">
+                    <h2>Gold coins are the best gifts</h2>
+                    <p>We know the struggle is real when deciding on the perfect gift for the ones you care about. You probably land up spending a lot on intangible gifts. But a gold coin is an asset that will last a lifetime. The person you are gifting gold coins to would only benefit as the gold coin rate would only increase with time. If you think the patterns on the gold coins are dull, with Tanishq you can emboss the outline of your favourite deity from their collection of different stamps. Explore our extensive range of 22 and 24 karat gold coins online and shop at your convenience.</p>
+                </div>
+                <div class="best">
+                    <h2>Things to keep in mind before buying a gold coin</h2>
+                    <p>Buying gold can be tricky unless you are buying them from Tanishq which guarantees the purity of gold. If you’re going to invest in a gold coin for yourself or looking to gift someone you care about, the below points might help you.</p>
+                </div>
+                <div class="best">
+                    <h2>Purity of a gold coin</h2>
+                    <p> There are two ways to measure the purity of gold coins - Karat and fineness. Karat is the more commonly used measure to check the purity of gold. 24 Karat is considered to be the purest form of gold which contains 24/24 parts of gold. Similarly, 22KT gold contains 22 parts of gold and 2 parts of other metals such as zinc or silver to make it more durable while making gold jewellery. Whereas, Fineness is another parameter used to measure the purity of 24 Karat gold.</p>
+                </div>
+                <div class="best">
+                    <h2>Hallmarking</h2>
+                    <p>Apart from purity, one should also check if the gold coins are hallmarked.</p>
+                    <p>The government of India has set up the Bureau of Indian Standards (BIS) to ensure that consumers are not cheated while buying gold. BIS certifies gold coins and gold jewellery by stamping them to certify the level of purity of the item.</p>
+                    <p>Looking to invest in a gold coin? Keep an eye on these guidelines.</p>
+                    <p>a) BIS logo</p>
+                    <p>b) Purity in carat and Fineness</p>
+                    <p>c) Logo of Assaying and hallmarking centre</p>
+                    <p>d) Jewellers' identification mark and number</p>
+                    <p>But lucky for you if you’re purchasing gold coins from Tanishq. Every Tanishq gold coin comes with proper certification.</p>
+                </div>
+                <div class="best">
+                    <h2>Packaging</h2>
+                    <p>With the advent of digitalisation, people are purchasing gold coins online now more than ever. But it is advisable to buy gold coins in secure packaging. The packaging is a guard against counterfeiting, fraud, and damage. It is advisable to not tear or open the tamper-proof packaging of the gold coin in case anyone intends to resell it. The packaging ensures the credibility of the purity of the gold coin. Tanishq ensures your investments safely reach you with its contactless hassle-free home delivery.</p>
+                </div>
+                <div class="best">
+                    <h2>Making charges</h2>
+                    <p>Since you’re buying the gold coin in its purest form, there are practically no making charges compared to other gold jewellery like earrings, rings, necklaces, etc.</p>
+                    </div>
+                    <div class="best">
+                        <h2>How to buy a gold coin?</h2>
+                        <p>Apart from the local jeweller, one can also buy gold coins from online e-tailers, banks, or the one-stop destination for all your gold needs – Tanishq. We offer a vast range of gold coins, with the minimum denomination being 1 gram.</p>
+                        <p>It’s never too late to invest in some gold coins for your secured future. Start your investment journey with Tanishq, a Tata brand you can trust with your eyes closed.</p>
+                    </div> 
+                    <div class="last">
+                        <div>
+                            <h2>Useful Links</h2>
+                            <div>
+                                <ul>
+                                    <li>Delivery Information</li>
+                                    <li>International Shipping</li>
+                                    <li>Payment Options</li>
+                                    <li>Track Your Order</li>
+                                    <li>Returns</li>
+                                    <li>Find a Store</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Information</h2>
+                            <div>
+                                <ul>
+                                    <li>Careers</li>
+                                    <li>Blog</li>
+                                    <li>Offers & Contest Details</li>
+                                    <li>Help & FAQS</li>
+                                    <li>About Tanishq</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Contact Us</h2>
+                            <div>
+                               <div>
+                                <img src="tanishq_contactUs_1.svg">
+                                <p>Write to us</p>
+                               </div>
+                               <div>
+                                <img src="tanishq_contactUs_2.svg">
+                                <p>1800-266-0123</p>
+                               </div>
+                               <div>
+                                <img src="tanishq_contactUs_3.svg">
+                                <p>Chat with us</->
+                               </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Download the Tanishq App Now</h3>
+                            <div>
+                                <img src="apple.svg">
+                                <img src="google-play.svg">
+                            </div>
+                            <div>
+                                <h3>
+                                    Follow us on
+                                </h3>
+                                <div>
+                                    <img src="facebook.svg">
+                                </div>
+                                <div>
+                                    <img src="twitter.svg">
+                                </div>
+                                <div>
+                                    <img src="instagram.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="end">
+                        <div>
+                            <div>
+                            <img src="visa.svg">
+                            </div>
+                            <div>
+                                <img src="master.svg">
+                            </div>
+                            <div>
+                                <img src="paypal.svg">
+                            </div>
+                            <div>
+                                <img src="maestro.svg">
+                                
+                            </div>
+                            <div>
+                                <img src="rupay.svg">
+                            </div>
+                            <div>
+                                <img src="axis.svg">
+                            </div>
+                            <div>
+                                <img src="icici.svg">
+                            </div>
+                            <div>
+                                <img src="diners.svg">
+                            </div>
+                            <div>
+                                <img src="amex.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h4>© 2023 Titan Company Limited. All Rights Reserved.</h4>
+                        <div>
+                            <p>Terms & Condition | Privacy Policy</p>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onload = function()
+                    {
+            var currentuser=JSON.parse(localStorage.getItem("tanishqCurrentUser"))
+            console.log(currentuser);
+            if(!!currentuser)
+            {
+                var logoutDiv = document.getElementById("logout");
+                var divfromhtml=document.getElementById("Switch");
+    
+                // var h1=document.createElement("h1");
+                // h1.innerText="kunal";
+                // divfromhtml.append(h1)
+                       
+                var button ='<button onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket fa-2xl "></i>Logout</button>'
+                var name = `<h1>${currentuser.userEmail}</h1>`;
+                    divfromhtml.innerHTML=name;
+                    logoutDiv.innerHTML=button;
+            }
+            else
+            {
+                alert("current user absent")
+            }
+          }
+          function logout()
+            {
+                alert("Logout Success");
+                localStorage.removeItem("tanishqCurrentUser");
+                window.location.reload()
+            }
+        
+            var divToShowProducts=document.getElementById("jewellery");
+            var finalData="";
+
+            var productsFromLs= JSON.parse(localStorage.getItem("tanshiqProductList"));
+            for( var i=0;i<productsFromLs.length;i++)
+            {
+                finalData += `<div onclick='redirect(${JSON.stringify(productsFromLs[i])})'id="singlepro">
+                    <img src=${productsFromLs[i].proImage}>
+                    <h3>${productsFromLs[i].proName}</h3>
+                    <p>${productsFromLs[i].proPrice}</p>
+                    </div>`;
+            }
+            divToShowProducts.innerHTML=finalData;
+        
+        function redirect(product)
+        {
+            var singlepage=JSON.stringify(product);
+            localStorage.setItem("TanishqCurrent-Products",singlepage); 
+            window.location.href =`./singlepage.html`
+        }
+                </script>
+            </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .login
+        {
+            width: 60%;
+            margin: auto;
+            height: 450px;
+            border: 1px solid red;
+            margin-top: 50px;
+            display: flex;
+            border-radius: 20px;
+
+        }
+        .login>div:nth-child(1)
+        {
+            width:70%;
+            height: 100%;
+            /* border: 1px solid black; */
+          
+        }
+        .login>div:nth-child(1)>h1
+        {
+            text-align: center;
+            margin-top: 50px;
+            color: brown;
+            font-family:  Nunito Sans,sans-serif!important;
+        }
+        .start
+        {
+            display: flex;
+            margin-bottom: 30px;
+
+        }
+        .form
+        {
+            margin-left: 100px;
+        }
+        fieldset
+        {
+            width:80%;
+         
+        }
+        legend
+        {
+            color: gray;
+        }
+       .b
+       {
+        font-weight: bold;
+        border: none;
+        background-color: white;
+        font-size: 20px;
+       }
+        .input
+        {
+            width: 50%;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+            border: 1px solid gray;
+        }
+        .input>input
+        {   height: 30px;
+            margin-left: 10px;
+            margin-top: 8px;
+            border: none;
+        }
+        .login>div:nth-child(2)
+        {
+            width:30%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+        .login>div:nth-child(2)>img
+        {
+            height: 100%;
+            width: 100%;
+        }
+        .password
+        {   width: 75%;
+            margin-left: 100px;  
+            border: 1px solid gray;
+            height: 50px;  
+            margin-bottom: 20px;
+            
+        }
+        .password>input
+        {
+            height: 30px;
+            width: 70%; 
+            margin-top: 10px;
+            margin-left: 10px; 
+            border: none;
+            
+        }
+        .confirmpassword
+        {   width: 75%;
+            margin-left: 100px;  
+            border: 1px solid gray;  
+            height: 50px; 
+            margin-bottom: 20px; 
+            
+        }
+        .confirmpassword>input
+        {
+            height: 30px;
+            width: 70%; 
+            margin-top: 10px;
+            margin-left: 10px; 
+            border: none;
+        }
+       
+       
+        .line
+        {
+           text-align: center;
+           margin-top: 20px;
+           font-family: Nunito Sans,sans-serif!important;
+           margin-bottom: 40px;
+           margin-left: 15px;
+        }
+        .btn
+        {
+            text-align: center;
+           margin-top: 50px;
+            /* border: 1px solid black; */
+            width: 150px;
+            height: 40px;
+            margin: auto;
+            background-color: brown;
+            border-radius: 5px;
+        }
+        .btn>button
+        {
+            margin-top: 10px;
+            border: none;
+            background-color: brown;
+            color: white;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+            
+        }
+        a1
+        
+            {
+            text-decoration: none;
+            color: brown;
+            
+        }
+        .email
+        {
+            margin-left: 100px;
+            margin-bottom: 20px;
+            width: 80%;
+            border: 1px solid black;
+            height: 50px;
+        }
+        .email input
+        {
+            margin-left: 10px;
+            margin-top: 0px;
+            height: 40px;
+            border: none;
+        }
+        
+        </style>
+</head>
+<body>
+    
+    <div class="login">
+        <div>
+            <h1>Register</h1>
+            <form onsubmit="register(event)">
+               <div class="email">
+                <input id="email" type="email" placeholder="enter email">
+               </div>
+            <div class="password">
+             <input id="password" type="password" placeholder="Enter Password">
+            </div>
+            <div class="confirmpassword">
+                <input id="confirmpassword" type="password" placeholder="Confirm Password">
+            </div>
+            <div class="line">
+                <p>By continuing, I agree to <a><u>Terms of Use</u></a> & <a1><u>Privacy Policy</u></a1></p>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Register">
+            </div>
+        </div>
+    </form>
+        <div>
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/a174d444-2b49-4ed2-9e28-d29a4e52165d/desktop/7.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-a174d444-2b49-4ed2-9e28-d29a4e52165d-desktop-o2OWQtw">
+        </div>
+    </div>
+
+
+<script src="reg.js"></script>
+
+</body>
+</html>

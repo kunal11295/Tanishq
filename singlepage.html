@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>page</title>
+    <script src="https://kit.fontawesome.com/032f5a99f2.js" crossorigin="anonymous"></script>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .screen
+        {
+            width: 100%;
+            border: 1px solid black;
+            
+        }
+        .navbar
+        {
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 70px;
+            display: flex;  
+            background-color: #f2e9e9;
+
+        }
+        .Left
+        {
+            width: 65%;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+        }
+        .right
+        {
+            width: 35%;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+        
+        }
+        .right>div
+        {
+            width: 15%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .right>div>h4
+        {
+
+            color: #832729;
+        }
+        .Left>div:nth-child(1)
+        {
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            
+        }
+        .Left>div:nth-child(1)>img
+        {
+            
+            margin-left: 150px;
+            padding-top: 8px;
+        }
+        .Left>div:nth-child(2)
+        {
+            /* border: 1px solid black;  */
+            width: 65%; 
+            display: flex;
+            height: 55px;
+            margin-top: 5px;
+            margin-left: 10px;
+        background-color: white;
+        }
+
+        .Left>div:nth-child(2)>div:nth-child(1)
+        {
+            width: 80%;
+            height: 40px;
+           
+            margin-left: 5px; 
+
+        }
+        .Left>div:nth-child(2)>div:nth-child(1)>input
+        {
+            width: 100%;
+            height: 45px;
+            margin-top: 5px;
+            border:none;
+        }
+        .Left>div:nth-child(2)>div:nth-child(2)>img
+        {
+            margin-top: 10px;
+              
+        }
+        .Left>div:nth-child(2)>div:nth-child(3)>img
+        {
+            margin-top: 18px;
+            
+              
+        } .Left>div:nth-child(2)>div:nth-child(4)>img
+        {
+            margin-top: 18px;
+            /* border: 1px solid black; */
+            margin-left: 10px;
+              
+        }
+        .cat
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-bottom: 20px;
+            
+        }
+        .cat>div:nth-child(1)
+        {   
+        
+            list-style: none;
+            display: flex;
+            padding-top: 10px;
+            padding-left: 15px;
+            height: 50px;
+            font-family: Nunito Sans,sans-serif!important;
+            color:  #000;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        .cat>div:nth-child(1)>div
+        {
+            width: 20%;
+            /* border: 1px solid violet; */
+            text-align: center;
+            
+        }
+        .gold
+        {
+            width: 90%;
+            height: 650px;
+            /* border:1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+           
+           
+        }
+        .gold>div
+        {
+            width: 50%;
+            /* border: 1px solid black;    */
+        }
+        .one>div:nth-child(1)
+        {
+            display: flex;
+        }
+        .one>div:nth-child(1)>p
+        {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .one>div:nth-child(1)>h3
+        {
+            color: #832729;
+        }
+        .one>div:nth-child(2)
+        {
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        .one>div:nth-child(2)>div:nth-child(1)
+        {
+            width:30%;
+            /* border: 1px solid violet; */
+        }
+       
+        .one>div:nth-child(2)>div:nth-child(2)
+        {
+            width:70%;
+            
+        }
+        .last
+        {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2e9e9;
+            margin: auto;
+        }
+        .last>div
+        {
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid black; */
+            margin-left: 20px;
+        }
+        .last>div:nth-child(1)>h2
+        {
+        margin-left:40px;
+            margin-top: 20px;
+            color: #832729;
+            font-family: Nunito Sans,sans-serif!important;
+        }
+        .last>div:nth-child(1)>div>ul
+        {
+            list-style: none;
+            /* text-align: center; */
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .last>div:nth-child(1)>div>ul>li
+        {
+            margin-bottom: 35px;
+        }
+        .last>div:nth-child(2)>h2
+        {
+        margin-left:40px;
+            margin-top: 20px;
+            color: #832729;
+            font-family: Nunito Sans,sans-serif!important;
+        }
+        .last>div:nth-child(2)>div>ul
+        {
+            list-style: none;
+            /* text-align: center; */
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .last>div:nth-child(2)>div>ul>li
+        {
+            margin-bottom: 35px;
+        }
+        .last>div:nth-child(3)>h2
+
+            {
+        margin-left:40px;
+            margin-top: 20px;
+            color: #832729;
+            font-family: Nunito Sans,sans-serif!important;
+            margin-bottom: 30px;
+        }
+
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)
+        {
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>p
+        {
+            margin-left: 10px;
+            font-size: 22px;
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)
+        {
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 40px;   
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>p
+        {
+            margin-left: 10px;
+            font-size: 22px;
+        }
+
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)
+        {
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 40px;
+
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)>p
+        {
+            margin-left: 10px;
+            font-size: 22px;
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>img 
+        {
+            width: 20px;
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>img 
+        {
+            width: 20px;
+        }
+        .last>div:nth-child(3)>div:nth-child(2)>div:nth-child(3)>img 
+        {
+            width: 20px;
+        }
+        .last>div:nth-child(4)>h3
+        {
+        
+            margin-top: 20px;
+        
+            font-family: Nunito Sans,sans-serif!important;
+            margin-bottom: 30px;
+            
+        }
+        .last>div:nth-child(4)>div:nth-child(2)
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        .last>div:nth-child(4)>div:nth-child(2)>img
+        {
+            width:40%;
+            justify-content: space-between;
+        }
+        .last>div:nth-child(4)>div:nth-child(3)
+        {
+            display: flex;
+            margin-top: 20px;
+        }
+        .last>div:nth-child(4)>div:nth-child(3)>h3
+        {
+            margin-left: 10px;
+            font-family: Nunito Sans,sans-serif!important;
+        }
+
+        .last>div:nth-child(4)>div:nth-child(3)>div>img{
+            width:20px;
+            margin-left: 20px;
+        
+        }
+        .last>div:nth-child(4)>div:nth-child(3)>div:nth-child(3)>img
+        {
+            margin-top: 5px;
+        }
+        .last>div:nth-child(4)>div:nth-child(3)>div:nth-child(4)>img
+        {
+            margin-top: 5px;
+        }.end
+        {
+            width: 100%;
+            /* border: 1px solid black; */
+            
+            display: flex;
+            background-color: #f2e9e9;
+        }
+        .end>div:nth-child(1)>div
+        {
+            margin-left: 15px;
+        }
+        .end>div:nth-child(1)>div>img
+        {
+        width: 70%;
+        height: 30px;
+        margin-top: 20px;
+        }
+        .end>div:nth-child(1)
+        {
+            display: flex;
+        }
+        .end>div:nth-child(2)
+        {
+            margin-left: 100px;
+        }
+        .end>div:nth-child(2)>h4
+        {
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Nunito Sans,sans-serif!important;
+        color: #832729;
+        }
+        .end>div:nth-child(2)>div>p
+        {
+        color:#832729;
+            font-family: Nunito Sans,sans-serif!important;
+        }
+        .photo
+        {
+            width: 90%;
+            border: 1px solid black;
+        }
+        .pic
+        {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
+        }
+        .pic>img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .productdetail
+        {
+            width: 90%;
+            height: 320px;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+
+        }
+        .productdetail>div:nth-child(1)
+        {
+            width: 50%;
+            height: 100%;
+             
+        }
+        .productdetail>div:nth-child(2)
+        {
+            width: 50%;
+            height: 100%;
+             
+        }
+        .productdetail>div:nth-child(1)>p
+        {
+            margin-bottom: 20px;    
+            font-size: 15px;
+        }
+        .productdetail>div:nth-child(1)>hr
+        {
+           margin-bottom: 10px;
+          
+        }
+        .productdetail>div:nth-child(1)>h3
+        {
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        .productdetail>div:nth-child(2)
+        {
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .productdetail>div:nth-child(2)>img
+        {
+            width: 50%;
+            margin-left: 150px;            
+        }
+        .review
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-bottom: 20p;
+        }
+         .review>h1
+         {
+            margin-bottom: 20px;
+         }
+         .rating
+         {
+            width: 90%;
+            /* border: 1px solid black; */
+            height: 175px;
+            margin: auto;
+          
+         }
+         .rating>div:nth-child(1)
+         {
+            width: 100%;
+
+            height: 125px;
+             text-align: center;
+             
+         }
+         .rating>div:nth-child(1)>div:nth-child(1)
+         {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 10px;
+         }
+         .rating>div:nth-child(1)>div:nth-child(1)>h4
+         {
+            margin-top: 5px;
+            font-size: 20px;
+            margin-left: 10px;
+            color:  #832729;;
+         }
+         .rating>div:nth-child(1)>div:nth-child(2)
+         {
+            /* border:1px solid black; */
+            display: flex;
+            justify-content: center;
+            
+         }
+         .rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)
+         {
+            /* border: 1px solid black; */
+            width: 20%;
+            height: 40px;
+            background-color: #832729;
+         }
+         .rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>button
+         {
+            margin-top: 10px;
+            font-size: 15px;
+            background-color:  #832729;
+            color: white;
+            border: none;
+         }
+         .rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)
+         {
+            /* border: 1px solid black; */
+            width: 20%;
+            height: 40px;
+            background-color: #832729;
+            margin-left: 10px;
+         }
+         .rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>button
+         {
+            margin-top: 10px;
+            font-size: 15px;
+            background-color:  #832729;
+            color: white;
+            border: none;
+         }
+         .rating>div:nth-child(2)
+         {
+            display: flex;
+            margin-top: 10px;
+         }
+         .rating>div:nth-child(2)>div:nth-child(2)
+         {
+            margin-left: 10px;
+         }
+         .star
+         {
+            width: 90%;
+            height: 150px;
+            margin: auto;
+            text-align: center;
+         }
+         .star>div:nth-child(1)
+         {
+            margin-bottom: 30px;
+            
+         }
+        .star>div:nth-child(2)>div:nth-child(1)
+        {
+            width: 20%;
+            height: 40px;
+            /* border: 1px solid black; */
+            margin: auto;
+            background-color: #832729;
+            
+        }
+        .star>div:nth-child(2)>div:nth-child(1)>button
+        {
+            margin-top: 12px;
+            border: none;
+            background-color: white;
+            background-color: #832729;
+            color: white;
+        }
+        .core
+        {
+            width: 90%;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .core>div:nth-child(2)
+        {
+            width: 100%;
+            /* border: 1px solid black; */
+            height: 350px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .core>div:nth-child(2)>div
+        {
+            width: 22%;
+            border: 1px solid gray;
+        }
+      .core>div:nth-child(2)>div:nth-child(1)
+      {
+        width: 22%;
+        height: 100%;
+        
+      }
+     
+     .one-stop>div:nth-child(1)>img
+      {
+        width: 100%;
+      }
+      .one-stop>div:nth-child(2)>p
+      {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+      }
+      .one-stop>div:nth-child(2)>h3
+      {
+        margin-left: 10px;
+      }
+      .pic
+      {
+        margin-top: 100px;
+      }
+     .karat
+     {
+        width: 100%;
+        height: 100%; 
+     }
+     .karat>div:nth-child(1)>div:nth-child(1)
+     {
+        width: 70%;
+        border: 1px solid brown;
+        height: 130px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+     }
+     .karat>div:nth-child(1)>div:nth-child(1)>img
+     {
+        width: 100%;
+        height: 100%;
+     }
+     .karat>div:nth-child(1)>div:nth-child(2)
+     {
+        width: 70%;
+        border: 1px solid brown;
+        height: 130px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+     }
+     .karat>div:nth-child(1)>div:nth-child(2)>img
+     {
+        width: 100%;
+        height: 100%;
+     }
+
+     .karat>div:nth-child(1)>div:nth-child(3)
+     {
+        width: 70%;
+        border: 1px solid brown;
+        height: 130px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+     }
+     .karat>div:nth-child(1)>div:nth-child(3)>img
+     {
+        width: 100%;
+        height: 100%;
+     }
+     .karat>div:nth-child(2)
+     {
+        width: 100%;
+
+     }
+     .karat>div:nth-child(2)>img
+     {
+        width: 100%;
+        
+     }
+     .two>h4
+
+     {
+        margin-bottom: 10px;
+     }
+     .two>div:nth-child(3)
+     {
+        display: flex;
+
+        /* border: 1px solid black; */
+        margin-top: 5px;
+     }
+
+     .two>div:nth-child(3)>div:nth-child(2)>p
+     {
+        margin-top: 5px;
+     }
+     .two>div:nth-child(6)>h2
+     {
+      /* border: 1px solid black; */
+        margin-top: 15px;
+     }
+
+     .cart>div:nth-child(3)
+     {
+        display: flex;
+        /* border: 1px solid black; */
+        width: 80%;
+        height: 40px;
+     }
+     .cart>div:nth-child(3)>div:nth-child(1)
+
+     {
+        border: 1px solid black;
+        width: 30%;
+        text-align: center;
+     }
+     .cart>div:nth-child(3)>div:nth-child(1)>button
+    {
+      font-size: 20px;
+        margin-top: 5px;
+        border: none;
+        background-color: white;
+        color: #000;
+
+    }
+    
+    .cart>div:nth-child(3)>div:nth-child(2)
+
+    {
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin-left: 20px;
+    background-color: #832729;
+    }
+    .cart>div:nth-child(3)>div:nth-child(2)>button
+    {
+      font-size: 20px;
+        margin-top: 5px;
+        border: none;
+        background-color:#832729;
+        color: #f1f2f4;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <class class="navbar">
+            <div class="Left">
+                <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTQuODMgNzQuNzkiPjxkZWZzPjxzdHlsZT4uYntmaWxsOiM4MzI3Mjk7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzguNzksNy41NWMtLjYyLTIuOTEsMS4zMi01LjU2LDQuMTUtNS41Nmg3Ljk1YzIuMTIsLjA5LDQuNzctMS41OSw0Ljc3LTEuNTlWMTMuNzNjMCwxMy41MS03LjQyLDE5LjI0LTEwLjg2LDE5Ljc3LS42MiwuMjctMS4wNiwuMDktLjI2LS41Myw0LjY4LTMsNy40Mi0xMC4xNSw3LjY4LTE2LjI0VjQuNTVjLS45NywuNjItMi44MiwuNzEtMi44MiwuNzFoLTYuOTdjLTEuODUsMC0yLjgyLC42Mi0zLjYyLDIuMjltMzUuNTgsMGMuNjItMi45MS0xLjI0LTUuNTYtNC4xNS01LjU2aC03Ljk1Yy0yLjAzLC4wOS00Ljc3LTEuNTktNC43Ny0xLjU5VjEzLjczYzAsMTMuNTEsNy40MiwxOS4yNCwxMC44NiwxOS43NywuNjIsLjI3LDEuMDYsLjA5LC4yNy0uNTMtNC42OC0zLTcuNDItMTAuMTUtNy42OC0xNi4yNFY0LjU1Yy45NywuNjIsMi44MiwuNzEsMi44MiwuNzFoNy4wNmMxLjg1LDAsMi44MywuNjIsMy41MywyLjI5aDBaTTIwLjI2LDYyLjk5Yy0uNzEtMS43Ny0uMTgtMy43MSwuMjYtNC40MWg4LjAzdjQuNDFoMi4wM3YtMTkuNTFzLS42Mi0uMDktMS4wNiwuNjJjLTMsNC43Ny01LjMsNi04LjY1LDkuMzYtMi44MywyLjgyLTQuOTQsNi0zLjg5LDkuNTNoMy4yN1ptLjg4LTUuNzRoNy40MnYtOC4zOWMtMS44NSwzLjQ0LTYuMjcsNS4zLTcuNDIsOC4zOVptODQuOTMtMTUuOGMtMi41NiwyLjAzLTQuNjgsMy44LTUuODMsNi40NC0xLjI0LDIuNjUtMS41OSw2LjQ0LDAsOS43MSwxLjc3LDMuNjIsMy44LDUuNTYsNi4xOCw3Ljk0LDEuNjgsMS44NSw0Ljg2LDUuNTYsMy44LDguODMsLjc5LDAsMS44NS0xLjk0LDIuMDMtMi42NSwuNDQtMi4yOSwuMTgtMy40NC0uNzktNS4xMi0uNjItMS4xNS0xLjk0LTIuMjktMi45MS0zLjQ0LDEuNDEtMS4xNSwyLjkxLTIuODMsNC4xNS00LjUsMS41OS0yLjIxLDIuNTYtNS45MSwuNTMtOS41My0xLjg1LTMuNDQtNy4wNi02LjYyLTcuMTUtNy42OGgwWm0xLjA2LDIwLjM5Yy0yLjAzLTEuNjgtMy4yNy0zLjA5LTQuNS01LjgzLTEuMjQtMi40Ny0xLjMyLTUuMzktLjc5LTcuNDIsLjYyLTIuMjEsMi4xMi0zLjgsMy41My00Ljk0LDEuNTksMS4xNSwzLjI3LDIuNTYsNC41LDQuNTksMi4wMywzLjQ0LDIuMDMsNS45MSwuNzEsOS4yNy0uNzksMS45NC0xLjY4LDMuMDktMy40NCw0LjMzaDBaTS41Nyw0NS4wN2MtLjM1LS43MSwuMTgtMi41NiwyLjMtMi4zOEgxMy4yOGMxLjMyLC4wOSwyLjEyLS44OCwzLjgtLjcxLTIuMzgsMS45NC0yLjY1LDIuOTEtMy4wOSw0Ljc3bC0xLjY4LDEzLjY4Yy0uNDQsNS41NiwxLjE1LDEwLjE1LDUuMywxMy45NS0yLjU2LC4zNS04LjEyLTMuNzEtOC4zLTExLjEyLS4xOC0zLjcxLC44OC0xNS41NCwuODgtMTUuNTQsLjI2LTEuOTQsMS41LTMuMzUsMS41LTMuMzVIMS44Yy0uNjIsLjA5LS45NywuMDktMS4yNCwuNzFILjU3Wm04MS44NCwxNy4zOWgyLjU2di01LjIxaDYuOTd2NS40N2gyLjY1di0xOC44OWgtMi42NXYxMS45MmgtNi45N3YtMTEuOTJoLTIuNTZ2MTguNjNoMFptLTcuMTUtMTQuMjFjLS42MiwuMTgtMS4yNC0uMDktMS44NS0uNjItLjg4LS43OS0xLjI0LTEuNTktMi4zOC0yLjI5LTEuMjQtLjYyLTMtLjcxLTQuMDYsLjA5LS45NywuNzEtLjk3LDIuMywuMDksMy4xOCwyLjAzLDEuNTksNC4yNCwyLjQ3LDYuOCwzLjgsNC42OCwyLjQ3LDUuNDcsNi44LDIuMjEsOS0yLjc0LDEuODUtNi4xOCwyLjAzLTkuMjcsLjg4LTIuMzgtLjk3LTQuMjQtMi45MS00LjUtNS4zLDEuNTksMCwyLjEyLC43MSwyLjc0LDEuNjgsLjk3LDEuMzIsMS41OSwxLjg1LDMsMi40NywyLjAzLC43OSw0LjMzLC41Myw1LjY1LS4yNiwxLjk0LTEuMjQsMS42OC0zLjI3LC4yNi00LjU5LTIuOTEtMi43NC02LjUzLTMuNTMtOC41Ni01LjU2LTEuNzctMS43Ny0yLjM4LTMuNzEtLjUzLTUuNzQsMS41OS0xLjY4LDUuODMtMi4yMSw4LjMtLjA5LDEuMDYsLjk3LDEuODUsMi4xMiwyLjEyLDMuMzVoMFptLTIxLjEtMTAuMDZjMC0xLjQxLDEuMDYtMi40NywyLjQ3LTIuNDcsMS4yNCwwLDIuMzgsMS4wNiwyLjM4LDIuNDcsMCwxLjMyLTEuMTUsMi40Ny0yLjM4LDIuNDctMS40MSwwLTIuNDctMS4xNS0yLjQ3LTIuNDdabTEuMTUsNS42NWgyLjQ3djE5LjE2aC0yLjQ3di0xOS4xNlptLTE5LjI1LDE5LjE2aDEuNzd2LTEzLjE1Yy44OCwyLjU2LDUuMjEsNS45Miw1LjIxLDUuOTIsMCwwLDMuMzUsMi44Myw0Ljk0LDYuNzFsMS4wNiwuNTN2LTE5LjE2aC0xLjc3djEzLjQyYy0uOTctMi41Ni00Ljc3LTUuNTYtNC43Ny01LjU2LTIuOTEtMi41Ni00Ljg2LTYuMDktNS4zLTcuNzdsLTEuMTUtLjM1djE5LjQyaDBaIi8+PC9zdmc+" width="80px" alt="image" style="opacity: 1;">
+                </div>
+            <div>
+                <div>
+                        <input type="search" placeholder="Search for Gold Jewellery, Diamond Jewellery and more…">
+                </div>
+                <div>
+                   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNvbXBvbmVudF8yMTdfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDI3IDI3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNyAyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjEuMnB4O30KCS5zdDF7ZmlsbDpub25lO30KCS5zdDJ7ZmlsbDojODMyNzI5O3N0cm9rZS13aWR0aDoxLjJweDt9Cgkuc3Qze29wYWNpdHk6MC44O30KCS5zdDR7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDV7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cgkuc3Q2e2ZpbGw6bm9uZTtzdHJva2U6IzgzMjcyOTtzdHJva2Utd2lkdGg6MTt9Cjwvc3R5bGU+CjxnPgoJPGNpcmNsZSBpZD0iRWxsaXBzZV8xMiIgY2xhc3M9InN0MCIgY3g9IjEzLjMiIGN5PSIxMy41IiByPSIxMiIvPgoJPHBhdGggaWQ9IlBhdGhfMjUzIiBjbGFzcz0ic3QxIiBkPSJNMCwwaDI3djI3SDBWMHoiLz4KCTxnIGlkPSJQYXRoXzQzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy43NyA0LjAxMSkiPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LjUsMEMxNC44LDAsMTksNC4zLDE5LDkuNWMwLDUuMi00LjMsOS41LTkuNSw5LjVDNC4yLDE5LDAsMTQuNywwLDkuNUMwLDQuMiw0LjMsMCw5LjUsMHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNOS41LDAuNWMtNSwwLTksNC05LDlzNCw5LDksOXM5LTQsOS05UzE0LjUsMC41LDkuNSwwLjUgTTkuNSwwQzE0LjgsMCwxOSw0LjIsMTksOS41UzE0LjgsMTksOS41LDE5CgkJCVMwLDE0LjcsMCw5LjVTNC4zLDAsOS41LDB6Ii8+Cgk8L2c+Cgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS4yNDIgNS40NSkiPgoJCTxnIGlkPSJjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJPGcgaWQ9Ikdyb3VwXzE0MzQ2IiBjbGFzcz0ic3QzIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDAiIGNsYXNzPSJzdDEiIGQ9Ik0wLDB2MTZoMTZWMEgweiBNMTUsMTVIMVYxaDE0TDE1LDE1eiIvPgoJCQk8L2c+CgkJPC9nPgoJCTxnIGlkPSJiLTIiPgoJCQk8ZyBpZD0iYy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJCTxnIGlkPSJHcm91cF8xNDM0NyIgY2xhc3M9InN0MyI+CgkJCQkJPHBhdGggaWQ9IlBhdGhfMTQ0NSIgY2xhc3M9InN0MSIgZD0iTTAsMHYxNmgxNlYwSDB6IE0xNSwxNUgxVjFoMTRMMTUsMTV6Ii8+CgkJCQk8L2c+CgkJCTwvZz4KCQkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODk0IDIuNjcpIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDYiIGNsYXNzPSJzdDQiIGQ9Ik03LjIsOC4yQzUuNyw4LjIsNC41LDcsNC41LDUuNXMxLjItMi43LDIuNy0yLjdTOS44LDQsOS44LDUuNWMwLDAsMCwwLDAsMAoJCQkJCUM5LjgsNyw4LjYsOC4yLDcuMiw4LjJ6Ii8+CgkJCQk8cGF0aCBpZD0iUGF0aF8xNDQ3IiBjbGFzcz0ic3Q1IiBkPSJNMTMsMnY3LjRjMCwwLjEtMC4xLDAuMi0wLjIsMC4yYzAsMCwwLDAsMCwwSDEuNmMtMC4xLDAtMC4yLTAuMS0wLjMtMC4yYzAsMCwwLDAsMCwwVjIKCQkJCQljMC0wLjEsMC4xLTAuMiwwLjMtMC4yaDEuOGwxLjEtMS42SDEwbDEsMS42aDEuOEMxMi45LDEuOCwxMywxLjksMTMsMnoiLz4KCQkJCTxnIGlkPSJSZWN0YW5nbGVfOTk0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuOTkgMy4wMDIpIj4KCQkJCQk8cmVjdCB4PSIwIiB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CgkJCQkJPHBvbHlnb24gY2xhc3M9InN0NiIgcG9pbnRzPSIwLjUsMC41IDAuNSwwLjUgMC41LDAuNSAJCQkJCSIvPgoJCQkJPC9nPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" height="40px" alt="image" style="opacity: 1;">
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojNjMxNjE3O3N0cm9rZS13aWR0aDoxLjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxnIGlkPSJNaWNyb3Bob25lX0hvdmVyIj4NCgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+DQoJCTxnIGlkPSJjIj4NCgkJCTxwYXRoIGlkPSJQYXRoXzE0MDIiIGNsYXNzPSJzdDAiIGQ9Ik0wLDB2MjhoMjhWMEwwLDB6IE0yNi4yLDI2LjJIMS44VjEuOGgyNC41VjI2LjJ6Ii8+DQoJCTwvZz4NCgkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuOTkyIDIuMzc0KSI+DQoJCQk8ZyBpZD0iR3JvdXBfMTQzMTIiPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDMiIGNsYXNzPSJzdDEiIGQ9Ik0xMS41LDkuNVYyLjlDMTEuNiwwLjMsOS42LTEuOSw3LTJDNC40LTEuOSwyLjQsMC4zLDIuNSwyLjl2Ni42Yy0wLjEsMi42LDEuOSw0LjgsNC41LDQuOQ0KCQkJCQlDOS42LDE0LjMsMTEuNiwxMi4xLDExLjUsOS41eiIvPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDQiIGNsYXNzPSJzdDEiIGQ9Ik0wLDcuNHYzLjljMCw0LjQsMy4xLDcuOSw3LDcuOXM3LTMuNSw3LTcuOVY3LjQiLz4NCgkJCQk8bGluZSBpZD0iTGluZV8xMTUiIGNsYXNzPSJzdDEiIHgxPSI3IiB5MT0iMTkuMSIgeDI9IjciIHkyPSIyMy45Ii8+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" height="25px" alt="image"style="opacity: 1;">
+                </div>       
+                <div>       
+                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik00LjA4LDExLjA3YzAtMy44NiwzLjEzLTYuOTksNi45OS02Ljk5czYuOTksMy4xMyw2Ljk5LDYuOTktMy4xMyw2Ljk5LTYuOTksNi45OWMtMy44NiwwLTYuOTktMy4xMy02Ljk5LTYuOTloMFptMTkuNDIsMTEuMzNsLTUuODctNS44N2MyLjkzLTMuNTIsMi41Ny04LjcxLS44MS0xMS44cy04LjU5LTIuOTctMTEuODIsLjI3Yy0zLjI0LDMuMjMtMy4zNSw4LjQ0LS4yNywxMS44MnM4LjI4LDMuNzMsMTEuOCwuODFsNS44Nyw1Ljg3LDEuMS0xLjFaIi8+PC9zdmc+" height="25px" alt="image" class="default-img" style="opacity: 1;">
+                </div>
+            </div>     
+                </div>
+        
+                <div class="right">
+                    <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOCAyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjggMjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDE0NzkxMzg0Nzg0NTA1MDEwMjA1MDAwMDAwOTgxNjUwODMxODQwMjc0MjcxOV8pO30NCgkuc3Qxe29wYWNpdHk6MC40Njt9DQoJLnN0MntmaWxsOm5vbmU7fQ0KCS5zdDN7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS1saW5lam9pbjpyb3VuZDt9DQo8L3N0eWxlPg0KPGc+DQoJPGRlZnM+DQoJCTxyZWN0IGlkPSJTVkdJRF8xXyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4Ii8+DQoJPC9kZWZzPg0KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAwMjY4NDE4MTM5MjEwNjUyNzkyNzAwMDAwMTIxNjI5NzI0MzkxMDQ1MDMxNzFfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiLz4NCgk8L2NsaXBQYXRoPg0KCTxnIGlkPSJTdG9yZV9JY29uX0RlZmF1bHRfU3RhdGVfMSIgc3R5bGU9ImNsaXAtcGF0aDp1cmwoI1NWR0lEXzAwMDAwMDI2ODQxODEzOTIxMDY1Mjc5MjcwMDAwMDEyMTYyOTcyNDM5MTA0NTAzMTcxXyk7Ij4NCgkJPGcgaWQ9ImIiPg0KCQkJPGcgaWQ9ImMiPg0KCQkJCTxnIGlkPSJHcm91cF8xNDIwOSIgY2xhc3M9InN0MSI+DQoJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNjkiIGNsYXNzPSJzdDIiIGQ9Ik0wLDB2MjhoMjhWMEgweiBNMjYuMiwyNi4ySDEuOFYxLjhoMjQuNVYyNi4yeiIvPg0KCQkJCTwvZz4NCgkJCTwvZz4NCgkJCTxnIGlkPSJkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjUwNCAzLjUwNCkiPg0KCQkJCTxnIGlkPSJlIj4NCgkJCQkJPGcgaWQ9Ikdyb3VwXzE0MjExIj4NCgkJCQkJCTxyZWN0IGlkPSJSZWN0YW5nbGVfOTkyNCIgeD0iOC43IiB5PSI4LjciIGNsYXNzPSJzdDMiIHdpZHRoPSIxMS4xIiBoZWlnaHQ9IjExLjkiLz4NCgkJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNzAiIGNsYXNzPSJzdDMiIGQ9Ik0yMSw0LjN2NC4zSDBWNC4zTDMuNSwwaDE0TDIxLDQuM3oiLz4NCgkJCQkJCTxsaW5lIGlkPSJMaW5lXzgzIiBjbGFzcz0ic3QzIiB4MT0iNC45IiB5MT0iOC40IiB4Mj0iNC45IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NCIgY2xhc3M9InN0MyIgeDE9IjEwLjUiIHkxPSI4LjQiIHgyPSIxMC41IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NSIgY2xhc3M9InN0MyIgeDE9IjE2LjEiIHkxPSI4LjQiIHgyPSIxNi4xIiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NiIgY2xhc3M9InN0MyIgeDE9IjEuMiIgeTE9IjguNCIgeDI9IjEuMiIgeTI9IjIxIi8+DQoJCQkJCTwvZz4NCgkJCQk8L2c+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                    <h4>Store</h4>
+                </div>
+                    <div id="Switch">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO3N0cm9rZS13aWR0aDoxLjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMywxNS43NWMtMy42NywwLTExLDEuODQtMTEsNS41djIuNzVIMjR2LTIuNzVjMC0zLjY2LTcuMzMtNS41LTExLTUuNVptMC0xMy43NWMtMy4wNCwwLTUuNSwyLjQ2LTUuNSw1LjVzMi40Niw1LjUsNS41LDUuNSw1LjUtMi40Niw1LjUtNS41LTIuNDYtNS41LTUuNS01LjVabTAsMTYuNWMzLjcxLDAsNy45NywxLjc3LDguMjUsMi43NUg0Ljc1Yy4zMi0uOTksNC41NS0yLjc1LDguMjUtMi43NW0wLTEzLjc1YzEuNTEsMCwyLjc1LDEuMjQsMi43NSwyLjc1cy0xLjI0LDIuNzUtMi43NSwyLjc1LTIuNzUtMS4yNC0yLjc1LTIuNzUsMS4yNC0yLjc1LDIuNzUtMi43NSIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMTMsMTUuNzVjLTMuNjcsMC0xMSwxLjg0LTExLDUuNXYyLjc1SDI0di0yLjc1YzAtMy42Ni03LjMzLTUuNS0xMS01LjVabTAtMTMuNzVjLTMuMDQsMC01LjUsMi40Ni01LjUsNS41czIuNDYsNS41LDUuNSw1LjUsNS41LTIuNDYsNS41LTUuNS0yLjQ2LTUuNS01LjUtNS41Wm0wLDE2LjVjMy43MSwwLDcuOTcsMS43Nyw4LjI1LDIuNzVINC43NWMuMzItLjk5LDQuNTUtMi43NSw4LjI1LTIuNzVtMC0xMy43NWMxLjUxLDAsMi43NSwxLjI0LDIuNzUsMi43NXMtMS4yNCwyLjc1LTIuNzUsMi43NS0yLjc1LTEuMjQtMi43NS0yLjc1LDEuMjQtMi43NSwyLjc1LTIuNzUiLz48L3N2Zz4=" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>Account</h4>
+                    </div>
+                    <div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>WishList</h4>
+                    </div>
+                    <div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" height="24px" alt="image" class="default-img" style="opacity: 1;">
+                        <h4>Cart</h4>
+                    </div>
+                    <div id="logout">
+                        <button>Logout</button>
+                    </div>
+                </div>
+                </class>
+                <div class="cat">
+                    <div>
+                            <div>All Jewellery</div>
+                            <div>Gold</div>
+                            <div>Diamond</div>
+                            <div>Earning</div>
+                            <div>Rings</div>
+                            <div>Mia</div>
+                            <div>collection</div>
+                            <div>rivaah</div>
+                            <div>golden harvest</div>
+                            <div>coporate gifting</div>
+                            <div>more</div>
+                    </div>
+                </div>
+                <div class="gold">
+                    <div class="one">
+                        <div>
+                            <p>Home</p>
+                            <p>|</p>
+                            <p>Gold</p>
+                            <p>|</p>
+                            <h3>Goddess Lakshmiji's Feet 10 Gram Gold Coin</h3>
+                        </div>
+                        <div id="singlepage"></div>
+                        <!-- <div class="karat">
+                            <div>
+                                <div>
+                                    <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_1.jpg">
+                                </div>
+                                <div>
+                                    <
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_2.jpg">
+                                </div>
+                                <div>
+                                    <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_3.jpg">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_1.jpg">
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="two">
+                        <h4>
+                            51F1NDXAZAAA003IA000531
+                        </h4>
+                        <h1>Goddess Lakshmiji's Feet 10<br> Gram Gold Coin</h1>
+                        <div>
+                            <div>
+                            <svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28"  height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg>
+                            </div>
+                            <div>
+                                <p>Write a Review</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Welcome the blessings into your life with this divine Goddess <br>Lakshmi 10 grams coin crafted in 22 Karat Yellow Gold with an <br>impression of her feet</p>
+                        </div>
+                        <div>
+                            <h2>Price  
+                                ₹
+                                66 542.00</h2>
+                                <p>Price inclusive of all taxes.See full Price Breakup</p>
+                        </div>
+                        <div class="weight">
+                            <div>
+                                <h3>Gross weight</h3>
+                                <div>
+                                <button>10.000g</button>
+                                </div>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cart">
+                            <p>Gold Purity : 22.00 Karat</p>
+                            <p>Not sure what to buy? Checkout our Buying Guides</p>
+                            <div>
+                                <div>
+                                    <button>Add to Cart</button>
+                                </div>
+                                <div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="margin-bottom: 50px"> 
+                        <hr>  
+                        <div>
+                            <p>Purity Guaranteed</p>
+                            <p>Easy Returns</p>
+                            <p>Free Shipping across India</p>
+                        </div> 
+                        <div>
+                            <h2>Still Confused What to Buy?</h2>
+                            <p>Get on live video call with our design experts, or visit your nearest Tanishq store to get an closer look and know more about the product.</p>
+                        </div> 
+                        <div>
+                            <button>Talk to Expert</button>
+                        </div>            
+                     </div>
+                </div>
+                   <div class="pic">
+                        <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/d1f34107-0514-42d9-9905-ce94f32695d2/desktop/safeD.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-d1f34107-0514-42d9-9905-ce94f32695d2-desktop-o8BE4jn">
+                   </div>
+                   <div class="productdetail">
+                    <div>
+                        <h1>Product Details</h1>
+                        <hr>
+                        <a>Surround yourself with the blessings of the divine with this Goddess Lakshmiji's Coin with an impression of her feet</a>
+                        <h3>Specifications</h3>
+                        <p><b>Purity</b>:22.00</p>
+                        <p><b>Quanity</b>:1</p>
+                        <p><b>Brand</b>:Tanishq</p>
+                        <p><b>Gender</b>Unisex</p>
+                        <p><b>Collection</b>:Bestsellers</p>
+                    </div>
+                    <div>
+                        <img src="https://staticimg.titan.co.in/Tanishq/Catalog/51F1NDXAZAAA00_2.jpg">
+
+                    </div>
+                   </div>
+                   <div class="review">
+                    <h1>Price Breakup<svg width="46" height="29" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg></h1>
+                    <h1>More Information<svg width="46" height="29" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg></h1>
+                    <h1>Review</h1>
+                    <hr>
+                   </div>
+                   <div class="rating">
+                    <div>
+                        <div>
+                            <svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                              </svg>
+                              <h4>0 Review</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-pen" style="color: #f0f2f4;"></i>
+                                <button>Write A Review</button>
+                               
+                            </div>
+                            <div> 
+                                <i class="fa-solid fa-message" style="color: #f1f2f4;"></i>
+                                <button>Ask A Question</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                        <h3>REVIEWS</h3>
+                        </div>
+                        <div>
+                        <h3>QUESTIONS</h3>
+                        </div>
+                    </div>
+                    <hr style="margin-bottom: 20px;">
+                   </div>
+                   
+                   <div class="star">
+                    <div>
+                        <svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                          </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                          </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                          </svg><svg width="28" height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                          </svg><svg width="28"  height="28" fill="none" stroke="#510505" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                          </svg>
+                    </div>
+                    <div>
+                        <div>
+                        <button>BE THE FIRST TO REVIEWS</button>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="core">
+                  <div>
+                    <h1>Customers Who Viewed This Also Viewed</h1>
+                  </div>
+                  <div  class="first">
+                    <div class="one-stop">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZAARAS00_1.jpg?impolicy=pqmed&imwidth=320">
+                        </div>
+                        <div>
+                            <p>10 gram 24 Karat Gold Coin with Lakshmi Motif</p>
+                            <h3>₹ 71592</h3>
+                        </div>
+                    </div>
+                    <div class="one-stop">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600105ZECAAP00_1.jpg?impolicy=pqmed&imwidth=320">
+                        </div>
+                        <div>
+                            <p>10 gram 22 Karat Gold Coin with the Blessing </p>
+                            <h3>₹ 65627</h3>
+                        </div>
+                    </div>
+                    <div class="one-stop">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600735ZAAAAP00_1.jpg?impolicy=pqmed&imwidth=320">
+                        </div>
+                        <div>
+                            <p>Ashtalakshmi 22 Karat Gold Coin</p>
+                            <h3>₹ 26617</h3>
+                        </div>
+                    </div>
+                    <div class="one-stop">
+                        <div>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/600113ZCARAS00_1.jpg?impolicy=pqmed&imwidth=320">
+                        </div>
+                        <div>
+                            <p>8 gram 24 Karat Gold Coin with Ganesha-Lakshmi Motif</p>
+                            <h3>₹ 57274</h3>
+                        </div>
+                    </div>
+
+                  </div>
+                  
+                  </div>
+                <div class="last"> 
+                    <div>
+                        <h2>Useful Links</h2>
+                        <div>
+                            <ul>
+                                <li>Delivery Information</li>
+                                <li>International Shipping</li>
+                                <li>Payment Options</li>
+                                <li>Track Your Order</li>
+                                <li>Returns</li>
+                                <li>Find a Store</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Information</h2>
+                        <div>
+                            <ul>
+                                <li>Careers</li>
+                                <li>Blog</li>
+                                <li>Offers & Contest Details</li>
+                                <li>Help & FAQS</li>
+                                <li>About Tanishq</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Contact Us</h2>
+                        <div>
+                           <div>
+                            <img src="tanishq_contactUs_1.svg">
+                            <p>Write to us</p>
+                           </div>
+                           <div>
+                            <img src="tanishq_contactUs_2.svg">
+                            <p>1800-266-0123</p>
+                           </div>
+                           <div>
+                            <img src="tanishq_contactUs_3.svg">
+                            <p>Chat with us</->
+                           </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Download the Tanishq App Now</h3>
+                        <div>
+                            <img src="apple.svg">
+                            <img src="google-play.svg">
+                        </div>
+                        <div>
+                            <h3>
+                                Follow us on
+                            </h3>
+                            <div>
+                                <img src="facebook.svg">
+                            </div>
+                            <div>
+                                <img src="twitter.svg">
+                            </div>
+                            <div>
+                                <img src="instagram.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="end">
+                    <div>
+                        <div>
+                        <img src="visa.svg">
+                        </div>
+                        <div>
+                            <img src="master.svg">
+                        </div>
+                        <div>
+                            <img src="paypal.svg">
+                        </div>
+                        <div>
+                            <img src="maestro.svg">
+                            
+                        </div>
+                        <div>
+                            <img src="rupay.svg">
+                        </div>
+                        <div>
+                            <img src="axis.svg">
+                        </div>
+                        <div>
+                            <img src="icici.svg">
+                        </div>
+                        <div>
+                            <img src="diners.svg">
+                        </div>
+                        <div>
+                            <img src="amex.svg">
+                        </div>
+                    </div>
+             <div>
+                        <h4>© 2023 Titan Company Limited. All Rights Reserved.</h4>
+                    <div>
+                        <p>Terms & Condition | Privacy Policy</p>  
+                    </div>
+             </div>
+                </div>
+              
+    </div>
+    <script>
+        window.onload=function()
+        {
+            var currentuser=JSON.parse(localStorage.getItem("tanishqCurrentUser"))
+            // console.log(currentuser.userName);
+
+            if(!!currentuser)
+            {
+                var logoutDiv = document.getElementById("logout");
+                var divfromhtml=document.getElementById("Switch");
+    
+                // var h1=document.createElement("h1");
+                // h1.innerText="kunal";
+                // divfromhtml.append(h1)
+                       
+                var button ='<button onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket fa-2xl "></i>Logout</button>'
+                var name = `<h1>${currentuser.userEmail}</h1>`;
+                    divfromhtml.innerHTML=name;
+                    logoutDiv.innerHTML=button;
+            }
+            else
+            {
+                alert("current user absent")
+            }
+
+            var product=JSON.parse(localStorage.getItem("TanishqCurrent-Products"));
+            var divToAppendProduct=document.getElementById("singlepage")
+
+            var structure= `<div id="singlePro">
+                <img src=${product.proImage}>
+                    <h3>${product.proName}</h3>
+                    <p>${product.proPrice}</p>
+                    <button onclick ='addcart(${JSON.stringify(product)})'>Add to cart </button>
+                    </div>`
+                    console.log(structure,"here");
+                    divToAppendProduct.innerHTML=structure;
+                }
+        function addcart(product)
+        {
+            alert("working")
+          var currretUser=JSON.parse(localStorage.getItem("tanishqCurrentUser"));
+            var userData=JSON.parse(localStorage.getItem("tanishqusers"));
+            var flagForUser=false;
+            for(var i=0;i<userData.length;i++)
+            {
+                if(currretUser.userEmail===userData[i].userEmail)
+                {
+                    if(userData[i].cartproducts==undefined)
+                    {
+                        userData[i].cartproducts=[product];
+                    }else
+                    {
+                        userData[i].cartproducts.push(product);
+                    }
+                    alert("product added to cart")
+                }
+                window.location.href='./cart1.html';
+            }
+            localStorage.setItem("tanishqusers",JSON.stringify(userData));
+        }  
+        function logout()
+            {
+                alert("Logout Success");
+                localStorage.removeItem("tanishqCurrentUser");
+                window.location.reload()
+            }
+    </script>
+</body>
+</html>
